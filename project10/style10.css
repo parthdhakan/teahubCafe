@@ -1,0 +1,322 @@
+html{
+scroll-behavior: smooth;	
+}
+
+*{margin:0; padding:0; box-sizing: border-box;
+font-family: 'PT Serif', serif;}
+
+/****************header part starts******************/
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+li{list-style: none;}
+
+
+	p{
+		font-size:0.9rem;
+		line-height:1.6;
+		font-weight:400;
+		color: #606060;
+	}
+	.extra-div h2{
+		font-size: 0.9rem;
+		margin: 20px 0 15px 0;
+		font-weight:bold;
+		line-height: 1.1;
+		word-spacing: 4px;
+	}
+.header{
+	
+width: 100%;
+height: 100vh;
+/* background-image: url("teahub6.jpg"); */
+background-repeat:no-repeat;
+background-size:100% 100%;
+clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+position:relative;
+background-attachment:fixed;
+}
+
+.header:before{
+	content:"";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left:0;
+	right:0;
+	opacity:0.3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, blue 100%);
+	
+}
+
+.navbar:before{
+	content:"";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left:0;
+	right:0;
+	opacity:0.3;
+	z-index: -1;
+	background: linear-gradiant(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+
+.nav-item a{
+	color: black;
+	font-weight:bold;
+	text-align:center;
+}
+
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: black;
+	text-align: center;
+	position: relative;
+	
+}
+
+.center-div{
+	color:#133d38;
+	width:100%;
+	height: auto;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+	border: 1px solid black;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline:none;
+	color: white;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height:1.4;
+	text-align: center;
+}
+
+.header-buttons a:hover{
+	color: #50d1c0;
+	background:#555;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p{
+	font-size: 1.3rem;
+	padding: 10px 0 20px 0;
+	color: white;
+}   
+/***************header part ends******************/
+
+/***************three extra header part starts******************/
+.header-first{
+width: 100%;height: auto;
+margin: 100px 0;
+text-align: center;
+}
+
+.extra-div{
+	background: #fff;
+	border: medium none;
+	padding: 50px;
+	border-radius: 3px;
+	transition: 0.3s;
+	
+}	
+.extra-div:hover{
+	box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.3);
+	transform:translateY(-20px); 
+} 
+/***************three extra header part ends******************/
+
+/*************** offer section starts************************/
+.pricing{
+	width:100%;
+	height: auto;
+	padding: 50px;
+	position: relative;
+}
+
+.pricing:before{
+	content:"";
+	position: absolute;
+	top:0%;
+	bottom: 0%;
+	left: 0;
+	right:0;
+	z-index: -1;
+	background: linear-gradient(160deg, #16c9f6 55%, white 0% );
+}
+
+.card-header{
+	font-size:1.6rem;
+	font-weight: bold;
+	background: white;
+	padding: 10px 5 !important;
+}
+.card-body{
+	padding: 30px 0px !important;
+}
+
+.card-body li{
+	margin:10px 0;
+	font-weight:400;
+	line-height:1.6;
+	font-size:15px;
+	color:#606060;
+}
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header {
+	color: #50d1c0;
+}
+
+.card:hover .card-footer {
+	color: #50d1c0;
+}
+/*************** offer section starts************************/
+/*************** contact us starts *****************/
+
+.contactus{
+	width:100%;
+	height:100vh;
+	padding:80px 0;
+	position: relative;
+}
+
+#contactid:before {
+	content:"";
+	position: absolute;
+	top:0%;
+	left:0;
+	bottom:0%;
+	right:0;
+	z-index:-1;
+	background: linear-gradient(-160deg, #16c9f6 55%, white 0% );
+}
+.form-button button{
+	border:1px solid #50d1c0;
+	border-radius:100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline:none;
+	color: #50d1c0;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.4;
+	text-align: center;
+	background: transparent;
+}
+
+form:hover .form-button{
+	background: white;
+	color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+::placeholder{
+		font-size:0.85rem;
+	}
+
+/*************** contact us ends ***********/
+
+/*************** newsletter starts ***********/
+
+.newsletter{
+	width: 100%;
+	height:auto;
+	margin: 80px auto;
+}
+
+.news-input{
+	border-radius: 100px 0px 0px 100px!important;
+	min-width:150px;
+	min-height:45px;
+}
+
+.input-group-text{
+	color: white !important;
+	background: #5bc8de!important;
+	border-radius: 0 100px 100px 0!important;
+    min-width:130px;
+min-height:	40px;
+
+}
+/*************** newsletter ends ***********/
+
+/***************footer starts ***********/
+.footersection{
+	width:100%;
+	height:auto;
+	padding:70px 0 20px 0;
+	background:#00abff;
+	position:relative;
+}
+
+.footersection p{
+	color: white;
+	
+}
+
+.footersection li a{
+	font-size: 0.9rem;
+	line-height:1.6;
+	font-weight: 400;
+	color: white;
+	text-transform: capitalize;
+	
+}
+.footersection h3{
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 25px;
+	font-size:1.2rem!important;
+	font-weight:600;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#mybtn{
+	display:none;
+	position: fixed;
+	bottom:20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	color: white;
+	background: #00abff;
+	padding:10px;
+	border-radius: 10px;
+}
+#myBtn: hover{
+	background: #606060;
+}
+
+/*************** footer ends ***********/
+
+/************media queries******/
+
+@media{max-width: 768px}{
+	.nav-item{
+		text-align: center!important;
+	}
+	.pricing  .contactus{
+		height: auto;
+		margin-top: 50px;
+	}
+	.card-second{
+		transform: translateY(0px);
+		margin: 30px, 0;
+	}
+	.contactus p{
+		padding:0 50px;
+	}
+}
